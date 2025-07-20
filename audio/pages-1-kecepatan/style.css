@@ -1,0 +1,63 @@
+/* CSS untuk mengatur tampilan agar responsif */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Menggunakan flexbox untuk memusatkan konten */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    background-color: #f0f0f0; /* Warna latar belakang abu-abu muda */
+    font-family: sans-serif;
+}
+
+.container {
+    /* Wadah untuk konten kita */
+    width: 90%; /* Lebar 90% dari layar HP */
+    max-width: 450px; /* Lebar maksimal 450px di layar besar (PC) */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan halus */
+    background-color: #ffffff; /* Latar belakang putih untuk kontainer */
+    border-radius: 10px; /* Sudut yang sedikit melengkung */
+    text-align: center; /* Membuat semua isi di dalamnya jadi di tengah */
+}
+
+img {
+    /* Membuat gambar menjadi responsif */
+    max-width: 100%; /* Lebar gambar tidak akan melebihi wadahnya */
+    height: auto; /* Tinggi akan menyesuaikan secara otomatis */
+    border-radius: 8px; /* Sudut gambar melengkung */
+    margin-bottom: 20px; /* Jarak antara gambar dan audio */
+}
+
+audio {
+    /* Membuat pemutar audio menjadi responsif */
+    width: 100%; /* Lebar pemutar audio mengisi wadahnya */
+}
+
+footer {
+    margin-top: 30px; /* Memberi jarak dari konten di atasnya */
+    padding: 20px;
+    font-size: 0.9em; /* Ukuran font sedikit lebih kecil */
+    color: #777;      /* Warna abu-abu agar tidak terlalu mencolok */
+    text-align: center;
+}
+
+/* ... (kode CSS Anda yang sudah ada sebelumnya) ... */
+
+.copyright {
+    margin-top: 10px; /* Beri sedikit jarak dari audio */
+    font-size: 0.8em;
+    color: #777;
+    text-align: center; /* Pusatkan teks */
+}
+
+/* Tambahkan media query untuk layar desktop */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px; /* Lebar maksimal container di desktop */
+    }
+    img {
+        max-width: 80%; /* Perkecil gambar jadi 80% dari container di desktop */
+    }
+}
